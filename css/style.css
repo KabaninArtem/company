@@ -23,3 +23,33 @@
 .header .jumbotron {
 	color: white;
 }
+.about-block {
+	padding: 70px 50px;
+	line-height: 2;
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+.about-block h2 {
+	padding-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.about-block p {
+	font-size: 19px;
+	padding: 25px 0; 
+}
+.about-block article {
+	padding: 30px 0;
+	color: #818181;
+}
+.about-block .logo {
+	color: #f4511e;
+  font-size: 200px;
+}
+@media (max-width: 768px) {
+	.about-block button {
+		width: 100%;
+	}
+	.logo {
+		padding-top: 50px;
+	}
+}
