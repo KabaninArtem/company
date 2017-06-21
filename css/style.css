@@ -1,0 +1,25 @@
+.header-menu, .header, .header .jumbotron {
+	border: none;
+	font-family: 'Montserrat', Arial, sans-serif;
+	background-color: #f4511e;
+}
+.header-menu a {
+	letter-spacing: 4px;
+	font-size: 12px;
+	color: white !important;
+}
+.header-menu .navbar-brand {
+	font-size: 18px;
+}
+.header-menu li a:hover,
+.header-menu li a:focus {
+	color: #f4511e !important;
+	background-color: white !important;
+}
+.header {
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+.header .jumbotron {
+	color: white;
+}
