@@ -1,9 +1,16 @@
 .menu, 
-.header, 
-.header .jumbotron {
+header, 
+header .jumbotron {
 	border: none;
 	font-family: 'Montserrat', Arial, sans-serif;
 	background-color: #f4511e;
+}
+header, 
+.about-block, 
+.services-block, 
+.portfolio-block {
+	padding-top: 35px;
+	padding-bottom: 30px;
 }
 .bg-grey {
 	background-color: #f6f6f6;
@@ -17,13 +24,21 @@ h2 {
 	font-weight: bold;
 }
 h3 {
+	padding-bottom: 50px;
   font-size: 19px;
   font-weight: 400;
 }
 h4 {
-	font-weight: 400;
 	padding-bottom: 20px;
+	font-weight: 400;
 }
+h5 {
+	padding: 10px 0;
+	color: #818181;
+	font-size: 15px;
+	font-weight: bold;
+}
+
 /*MENU*/
 
 .menu a {
@@ -42,11 +57,7 @@ h4 {
 
 /*HEADER*/
 
-.header, .about-block, .services-block {
-	padding-top: 50px;
-	padding-bottom: 30px;
-}
-.header .jumbotron {
+header .jumbotron {
 	color: white;
 }
 
@@ -73,9 +84,6 @@ h4 {
 
 /*SERVICES-BLOCK*/
 
-.services-block > div {
-	margin-top: 70px;
-}
 .services-block .logo {
 	font-size: 50px;
 }
@@ -84,7 +92,43 @@ h4 {
 	color: #818181;
 }
 
+/*PORTFOLIO-BLOCK*/
 
+.portfolio-block {
+	padding: 50px 60px;
+}
+.portfolio-block .thumbnail {
+	padding: 0 0 20px;
+	border: none;
+}
+.portfolio-block .thumbnail img {
+	width: 100%;
+}
+.portfolio-block p {
+	color: #818181;
+}
+.portfolio-block .carousel-indicators li {
+    border-color: #f4511e;
+}
+.portfolio-block .carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.portfolio-block .carousel-inner p {
+	color: #303030;
+	font-size: 19px;
+	font-weight: 400;
+}
+.portfolio-block .carousel-inner p:first-child {
+	margin-top: 70px;
+}
+.portfolio-block .carousel-inner p:last-child {
+	margin-bottom: 70px;
+}
+.portfolio-block .carousel-control.left,   
+.portfolio-block .carousel-control.right {
+   color: #f4511e;
+   background-image: none;
+}
 @media (max-width: 768px) {
 	.about-block button {
 		width: 100%;
