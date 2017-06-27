@@ -1,40 +1,66 @@
-.header-menu, .header, .header .jumbotron {
+.menu, 
+.header, 
+.header .jumbotron {
 	border: none;
 	font-family: 'Montserrat', Arial, sans-serif;
 	background-color: #f4511e;
 }
-.header-menu a {
+.bg-grey {
+	background-color: #f6f6f6;
+}
+.logo {
+	color: #f4511e;
+}
+h2 {
+	padding-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+h4 {
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+/*MENU*/
+
+.menu a {
 	letter-spacing: 4px;
 	font-size: 12px;
 	color: white !important;
 }
-.header-menu .navbar-brand {
+.menu .navbar-brand {
 	font-size: 18px;
 }
-.header-menu li a:hover,
-.header-menu li a:focus {
+.menu li a:hover,
+.menu li a:focus {
 	color: #f4511e !important;
 	background-color: white !important;
 }
-.header {
-	padding-top: 70px;
+
+/*HEADER*/
+
+.header, .about-block, .services-block {
+	padding-top: 50px;
 	padding-bottom: 30px;
 }
 .header .jumbotron {
 	color: white;
 }
+
+/*ABOUT-BLOCK*/
+
 .about-block {
-	padding: 70px 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 	line-height: 2;
 	font-family: 'Montserrat', Arial, sans-serif;
 }
-.about-block h2 {
-	padding-bottom: 20px;
-	font-size: 24px;
-	font-weight: bold;
-}
 .about-block p {
 	font-size: 19px;
+	line-height: 1.5;
 	padding: 25px 0; 
 }
 .about-block article {
@@ -42,12 +68,29 @@
 	color: #818181;
 }
 .about-block .logo {
-	color: #f4511e;
   font-size: 200px;
 }
+
+/*SERVICES-BLOCK*/
+
+.services-block > div {
+	margin-top: 70px;
+}
+.services-block .logo {
+	font-size: 50px;
+}
+.services-block p {
+	margin: 0 0 10px;
+	color: #818181;
+}
+
+
 @media (max-width: 768px) {
 	.about-block button {
 		width: 100%;
+	}
+	.about-block .col-sm-4 {
+		text-align: center;
 	}
 	.logo {
 		padding-top: 50px;
