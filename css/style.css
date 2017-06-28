@@ -8,8 +8,9 @@ header .jumbotron {
 header, 
 .about-block, 
 .services-block, 
-.portfolio-block {
-	padding-top: 35px;
+.portfolio-block,
+.pricing-block {
+	padding-top: 50px;
 	padding-bottom: 30px;
 }
 .bg-grey {
@@ -129,6 +130,48 @@ header .jumbotron {
    color: #f4511e;
    background-image: none;
 }
+
+/*PRICING-BLOCK*/
+
+.pricing-block .panel {
+  border: 1px solid #f4511e; 
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+.pricing-block .panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.pricing-block .panel-body p,
+.pricing-block .panel-footer p {
+	font-size: 15px;
+	font-family: 'Lato', Tahoma, sans-serif; 
+	line-height: 1.8;
+	color: #818181;
+} 
+.pricing-block .panel-footer .price {
+	font-size: 32px;
+}
+.pricing-block .panel-heading {
+	padding: 25px;
+	border-radius: 0;
+	background-color: #f4511e; 
+}
+.pricing-block .panel-heading h1 {
+	color: white;
+} 
+.pricing-block .panel-footer {
+	background-color: #fff;
+}
+.pricing-block .panel-footer .btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+.pricing-block .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff;
+    color: #f4511e;
+}
 @media (max-width: 768px) {
 	.about-block button {
 		width: 100%;
@@ -138,5 +181,8 @@ header .jumbotron {
 	}
 	.logo {
 		padding-top: 50px;
+	}
+	.pricing-block .panel-footer .btn {
+		width: 100%;
 	}
 }
