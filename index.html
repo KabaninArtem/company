@@ -7,13 +7,14 @@
   <title>Company</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
   <script src="js/jquery-3.2.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
   <script src="bootstrap/js/bootstrap.min.js" defer></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1gIQFonNrMqmj4rG7gf1Rp_0uh75XVxA&callback=myMap" defer></script>
 </head>
-<body id="myPage">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<nav class="navbar navbar-default navbar-fixed-top menu">
   	<div class="container">
     	<div class="navbar-header">
@@ -50,7 +51,7 @@
 			</form>  		
 		</div>
 	</header>
-	<div class="container-fluid about-block" id="about-block">
+	<div id="about-block" class="container-fluid about-block">
 		<div class="row">
 			<div class="col-sm-8">
 				<h2 class="text-uppercase">About company page</h2>
@@ -59,14 +60,14 @@
 				<button class="btn btn-default btn-lg">Get in touch</button>
 			</div>
 			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-signal logo" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-signal logo"></span>
 			</div>
 		</div>
 	</div>
-  <div class="container-fluid about-block bg-grey" id="about-block">
+  <div id="about-block" class="container-fluid about-block bg-grey">
     <div class="row">
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-globe logo" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
       </div>
       <div class="col-sm-8">
         <h2 class="text-uppercase">Our values</h2>
@@ -76,10 +77,10 @@
       </div>
     </div>
   </div>
-  <div class="container services-block" id="services-block">
+  <div id="services-block" class="container services-block">
     <h2 class="text-uppercase text-center">Services</h2>
     <h3 class="text-center">What we offer</h3>
-    <div class="row">
+    <div class="row slideanim">
       <div class="col-sm-4">
         <div class="text-center">
           <span class="glyphicon glyphicon-off text-center logo"></span>
@@ -102,7 +103,9 @@
         <p class="text-center">Lorem ipsum dolor sit amet..</p>
       </div>
     </div>
-    <div class="row">
+    <br>
+    <br>
+    <div class="row slideanim">
       <div class="col-sm-4">
         <div class="text-center">
           <span class="glyphicon glyphicon-leaf text-center logo"></span>
@@ -126,10 +129,10 @@
       </div>
     </div>
   </div>
-	<div class="container-fluid portfolio-block bg-grey" id="portfolio-block">
+	<div id="portfolio-block" class="container-fluid portfolio-block bg-grey">
     <h2 class="text-uppercase text-center">Portfolio</h2> 
     <h3 class="text-center">What we have created</h3>
-    <div class="row">
+    <div class="row slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="img/paris.jpg" alt="Paris">
@@ -187,10 +190,10 @@
       </a>
     </div>
   </div>
-  <div class="container-fluid pricing-block" id="pricing-block">
+  <div id="pricing-block" class="container-fluid pricing-block">
     <h2 class="text-uppercase text-center">Pricing</h2>
     <h3 class="text-center">Choose a payment plan that works for you</h3>
-    <div clas="row">
+    <div class="row slideanim">
       <div class="col-sm-4 col-xs-12">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -256,7 +259,7 @@
       </div>
     </div>
   </div> 
-  <div class="container-fluid contact-block bg-grey" id="contact-block">
+  <div id="contact-block" class="container-fluid contact-block bg-grey">
     <h2 class="text-uppercase text-center">Contact</h2>
     <div class="row">
       <div class="col-sm-6">
@@ -265,7 +268,7 @@
         <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
         <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 slideanim">
         <div class="row">
           <div class="col-sm-6 form-group">
             <input type="text" class="form-control" id="name" placeholder="Name">

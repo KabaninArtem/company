@@ -1,9 +1,42 @@
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(70%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+  } 
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+  }
+}
 .menu, 
 header, 
 header .jumbotron {
-	border: none;
 	font-family: 'Montserrat', Arial, sans-serif;
 	background-color: #f4511e;
+	border: none;
 }
 header, 
 .about-block, 
@@ -36,23 +69,24 @@ h4 {
 }
 h5 {
 	padding: 10px 0;
-	color: #818181;
 	font-size: 15px;
 	font-weight: bold;
+	color: #818181;
 }
 
 /*MENU*/
 
 .menu a {
-	letter-spacing: 4px;
 	font-size: 12px;
 	color: white !important;
+	letter-spacing: 4px;
 }
 .menu .navbar-brand {
 	font-size: 18px;
 }
 .menu li a:hover,
-.menu li a:focus {
+.menu li a:focus,
+.menu li.active a {
 	color: #f4511e !important;
 	background-color: white !important;
 }
@@ -66,13 +100,13 @@ header .jumbotron {
 /*ABOUT-BLOCK*/
 
 .about-block {
-	line-height: 2;
 	font-family: 'Montserrat', Arial, sans-serif;
+	line-height: 2;
 }
 .about-block p {
+	padding: 25px 0; 
 	font-size: 19px;
 	line-height: 1.5;
-	padding: 25px 0; 
 }
 .about-block article {
 	padding: 30px 0;
@@ -111,9 +145,9 @@ header .jumbotron {
   background-color: #f4511e;
 }
 .portfolio-block .carousel-inner p {
-	color: #303030;
 	font-size: 19px;
 	font-weight: 400;
+	color: #303030;
 }
 .portfolio-block .carousel-inner p:first-child {
 	margin-top: 70px;
@@ -141,16 +175,16 @@ header .jumbotron {
 .pricing-block .panel-footer p {
 	font-size: 15px;
 	font-family: 'Lato', Tahoma, sans-serif; 
-	line-height: 1.8;
 	color: #818181;
+	line-height: 1.8;
 } 
 .pricing-block .panel-footer .price {
 	font-size: 32px;
 }
 .pricing-block .panel-heading {
 	padding: 25px;
-	border-radius: 0;
 	background-color: #f4511e; 
+	border-radius: 0;
 }
 .pricing-block .panel-heading h1 {
 	color: white;
@@ -160,13 +194,13 @@ header .jumbotron {
 }
 .pricing-block .panel-footer .btn {
   margin: 15px 0;
-  background-color: #f4511e;
   color: #fff;
+  background-color: #f4511e;
 }
 .pricing-block .panel-footer .btn:hover {
-  border: 1px solid #f4511e;
   background-color: #fff;
   color: #f4511e;
+  border: 1px solid #f4511e;
 }
 
 /*CONTACT-BLOCK*/
@@ -183,23 +217,8 @@ header .jumbotron {
 
 /*FOOTER*/
 
-
 footer .glyphicon {
   margin-bottom: 20px;
-  color: #f4511e;
   font-size: 20px;
-}
-@media (max-width: 768px) {
-	.about-block button {
-		width: 100%;
-	}
-	.about-block .col-sm-4 {
-		text-align: center;
-	}
-	.logo {
-		padding-top: 50px;
-	}
-	.pricing-block .panel-footer .btn {
-		width: 100%;
-	}
+  color: #f4511e;
 }
