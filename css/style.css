@@ -10,7 +10,8 @@ header,
 .services-block, 
 .portfolio-block,
 .pricing-block,
-.contact-block {
+.contact-block,
+footer {
 	padding: 50px 50px 30px;
 }
 .bg-grey {
@@ -178,6 +179,15 @@ header .jumbotron {
 }
 .contact-block .btn {
 	margin-top: 20px;
+}
+
+/*FOOTER*/
+
+
+footer .glyphicon {
+  margin-bottom: 20px;
+  color: #f4511e;
+  font-size: 20px;
 }
 @media (max-width: 768px) {
 	.about-block button {
