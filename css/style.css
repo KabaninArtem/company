@@ -170,7 +170,7 @@ header .jumbotron {
   transition: box-shadow 0.5s;
 }
 .pricing-block .panel:hover {
-  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  box-shadow: 5px 0px 40px rgba(0,0,0,0.2);
 }
 .pricing-block .panel-body p,
 .pricing-block .panel-footer p {
