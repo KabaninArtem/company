@@ -222,3 +222,7 @@ footer .glyphicon {
   font-size: 20px;
   color: #f4511e;
 }
+footer p {
+	font-size: 15px;
+	color: #818181;
+}
