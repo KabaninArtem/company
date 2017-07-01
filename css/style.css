@@ -33,7 +33,7 @@
       -webkit-transform: translateY(0%);
   }
 }
-.menu, 
+.menu,
 header, 
 header .jumbotron {
 	background-color: #f4511e;
@@ -78,6 +78,9 @@ h5 {
 
 /*MENU*/
 
+.menu button {
+	border: none;
+}
 .menu a {
 	font-size: 12px;
 	color: white !important;
