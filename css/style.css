@@ -1,4 +1,6 @@
-.slideanim {visibility:hidden;}
+.slideanim {
+	visibility:hidden;
+}
 .slide {
   /* The name of the animation */
   animation-name: slide;
@@ -34,7 +36,6 @@
 .menu, 
 header, 
 header .jumbotron {
-	font-family: 'Montserrat', Arial, sans-serif;
 	background-color: #f4511e;
 	border: none;
 }
@@ -45,6 +46,7 @@ header,
 .pricing-block,
 .contact-block,
 footer {
+	font-family: 'Montserrat', Arial, sans-serif;
 	padding: 50px 50px 30px;
 }
 .bg-grey {
@@ -100,7 +102,6 @@ header .jumbotron {
 /*ABOUT-BLOCK*/
 
 .about-block {
-	font-family: 'Montserrat', Arial, sans-serif;
 	line-height: 2;
 }
 .about-block p {
