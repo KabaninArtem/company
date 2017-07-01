@@ -1,17 +1,13 @@
-/*ABOUT-BLOCK*/
-
-.about-block button {
+.about-block button,
+.pricing-block .panel-footer .btn {
 	width: 100%;
 }
+
+/*ABOUT-BLOCK*/
+
 .about-block .col-sm-4 {
 	text-align: center;
 }
 .logo {
 	padding-top: 50px;
-}
-
-/*PRICING-BLOCK*/
-
-.pricing-block .panel-footer .btn {
-	width: 100%;
 }
